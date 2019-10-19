@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\Shaders\DomeShader.fx" />
+    <None Include="Data\Shaders\FontShader.fx" />
+    <None Include="Data\Shaders\RefractionShader.fx" />
+    <None Include="Data\Shaders\TerrainClipShader.fx" />
+    <None Include="Data\Shaders\TerrainShader.fx" />
+    <None Include="Data\Shaders\WaterShader.fx" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ApplicationClass.h" />
+    <ClInclude Include="BitmapClass.h" />
+    <ClInclude Include="CameraClass.h" />
+    <ClInclude Include="CpuClass.h" />
+    <ClInclude Include="DirectXClass.h" />
+    <ClInclude Include="DomeShaderClass.h" />
+    <ClInclude Include="FontClass.h" />
+    <ClInclude Include="FontShaderClass.h" />
+    <ClInclude Include="InputClass.h" />
+    <ClInclude Include="LightClass.h" />
+    <ClInclude Include="ModelClass.h" />
+    <ClInclude Include="RefractionShaderClass.h" />
+    <ClInclude Include="RenderTextureClass.h" />
+    <ClInclude Include="TerrainClass.h" />
+    <ClInclude Include="TerrainClipShaderClass.h" />
+    <ClInclude Include="TerrainShaderClass.h" />
+    <ClInclude Include="TextClass.h" />
+    <ClInclude Include="TextureClass.h" />
+    <ClInclude Include="TimerClass.h" />
+    <ClInclude Include="WaterModelClass.h" />
+    <ClInclude Include="WaterShaderClass.h" />
+    <ClInclude Include="WindowClass.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ApplicationClass.cpp" />
+    <ClCompile Include="BitmapClass.cpp" />
+    <ClCompile Include="CameraClass.cpp" />
+    <ClCompile Include="CpuClass.cpp" />
+    <ClCompile Include="DirectXClass.cpp" />
+    <ClCompile Include="DomeShaderClass.cpp" />
+    <ClCompile Include="FontClass.cpp" />
+    <ClCompile Include="FontShaderClass.cpp" />
+    <ClCompile Include="InputClass.cpp" />
+    <ClCompile Include="LightClass.cpp" />
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="ModelClass.cpp" />
+    <ClCompile Include="RefractionShaderClass.cpp" />
+    <ClCompile Include="RenderTextureClass.cpp" />
+    <ClCompile Include="TerrainClass.cpp" />
+    <ClCompile Include="TerrainClipShaderClass.cpp" />
+    <ClCompile Include="TerrainShaderClass.cpp" />
+    <ClCompile Include="TextClass.cpp" />
+    <ClCompile Include="TextureClass.cpp" />
+    <ClCompile Include="TimerClass.cpp" />
+    <ClCompile Include="WaterModelClass.cpp" />
+    <ClCompile Include="WaterShaderClass.cpp" />
+    <ClCompile Include="WindowClass.cpp" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{46CCE8A4-24C6-46D7-945E-7866508E2D6C}</ProjectGuid>
+    <RootNamespace>Landscape</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
